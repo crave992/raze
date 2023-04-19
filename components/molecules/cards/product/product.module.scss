@@ -1,0 +1,33 @@
+@import "styles/variables";
+
+.card {
+	cursor: pointer;
+}
+
+.image {
+	line-height: 1;
+	margin-bottom: 16px;
+
+	img {
+		display: block;
+		object-fit: cover;
+	}
+}
+
+.title {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.body {
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 8px;
+}
+
+.price {
+	font-size: 18px;
+	font-weight: bold;
+	color: $s_orange;
+}

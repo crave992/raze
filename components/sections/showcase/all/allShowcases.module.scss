@@ -1,0 +1,28 @@
+@import "styles/variables";
+
+.allShowcases {
+	padding: 120px 0;
+	background-color: $account;
+}
+
+.showcases {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+
+	& > div {
+		width: calc((100% - 80px) / 3);
+	}
+}
+
+.titleWrapper {
+	position: relative;
+	margin-bottom: 48px;
+
+	:global(.selectField) {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

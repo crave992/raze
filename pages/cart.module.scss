@@ -1,0 +1,150 @@
+@import "styles/variables";
+
+.title {
+	font-family: $font__zan;
+	font-size: 44px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+
+.cartWrapper {
+	background-color: $sh_white;
+	border-radius: 6px;
+	padding: 48px 64px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	.image {
+		width: 120px;
+	}
+
+	.details {
+		width: calc(100% - 120px - 130px - 150px - 100px);
+		padding: 0 16px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.quantity {
+		width: 130px;
+		text-align: center;
+	}
+
+	.subtotal {
+		width: 150px;
+		text-align: right;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.remove {
+		width: 100px;
+
+	}
+}
+
+.rowHead {
+	margin-bottom: 8px;
+
+	.column {
+		font-size: 16px;
+		font-weight: 300;
+	}
+}
+
+.cartItems {
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid $border;
+}
+
+.cartItem {
+	padding: 16px 0;
+}
+
+.adjustmentsWrapper {
+	font-weight: 300;
+	font-size: 16px;
+	color: $p_blue-dark;
+	padding: 16px 0;
+
+	.dataSet {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 8px 0;
+	}
+
+	.value {
+		font-weight: bold;
+		margin-left: auto;
+	}
+}
+
+.totalWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	color: $p_blue-dark;
+
+	.label {
+		font-size: 18px;
+		font-weight: 300;
+		margin-left: auto;
+	}
+
+	.total {
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 48px;
+	}
+}
+
+.actionWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 56px;
+
+	& > div:last-of-type {
+		margin-left: auto;
+	}
+}
+
+
+.selectWrapper {
+	background: url('../assets/down.svg') no-repeat calc(100% - 16px) center $input-bg;
+	background-size: 8px auto;
+
+	.quantitySelect {
+		width: 100%;
+		color: $p_blue-deep;
+		border-radius: 6px;
+		border: 1px solid $input-border;
+		background: transparent;
+		padding: 14px 20px;
+		transition: all 0.3s linear;
+
+		&:focus,
+		&:focus-visible {
+			border-color: $sh_blue-dark;
+		}
+	}
+}
+
+
+.removeBtn {
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	border-radius: 6px;
+	border: 1px solid $border;
+	background: url('../assets/delete.svg') no-repeat center;
+	background-size: 18px auto;
+	margin-left: auto;
+}

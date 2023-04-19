@@ -1,0 +1,188 @@
+body {
+	font-family: $font__larsseit;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.75;
+	color: $p_blue-dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	line-height: 1.25;
+	font-size: inherit;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.section__headline {
+	font-family: $font__space;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: $p_blue;
+
+	&.orange {
+		color: $s_orange;
+	}
+
+	&.blue {
+		color: $s_blue;
+	}
+
+	&.red {
+		color: $s_red
+	}
+
+	&.white {
+		color: $sh_white;
+	}
+
+	&.yellow {
+		color: $s_yellow;
+	}
+}
+
+.node__title {
+	font-family: $font__zan;
+	font-size: 70px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 1.25;
+	color: $p_blue-dark;
+
+	&.orange {
+		color: $s_orange;
+	}
+
+	&.blue {
+		color: $s_blue;
+	}
+
+	&.red {
+		color: $s_red
+	}
+
+	&.white {
+		color: $sh_white;
+	}
+
+	&.yellow {
+		color: $s_yellow;
+	}
+
+	@include rhm-tablet {
+		font-size: 50px;
+	}
+}
+
+.section__title {
+	font-family: $font__larsseit;
+	font-weight: 700;
+	font-size: 43px;
+	line-height: 1.25;
+	color: $p_blue-dark;
+
+	&.orange {
+		color: $s_orange;
+	}
+
+	&.blue {
+		color: $s_blue;
+	}
+
+	&.dark-blue {
+		color: $p_blue-dark;
+	}
+
+	&.red {
+		color: $s_red
+	}
+
+	&.white {
+		color: $sh_white;
+	}
+
+	&.yellow {
+		color: $s_yellow;
+	}
+
+	@include rhm-tablet {
+		font-size: 30px;
+	}
+}
+
+.section__title_2 {
+	font-family: $font__zan;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 44px;
+	line-height: 1.2;
+
+	&.white {
+		color: $sh_white;
+	}
+
+	&.deep-blue {
+		color: $p_blue-deep;
+	}
+
+	@include rhm-tablet {
+		font-size: 30px;
+	}
+}
+
+.section__description {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.5;
+
+	&.white {
+		color: $sh_white;
+	}
+
+	&.small {
+		font-size: 16px;
+	}
+
+	&.large {
+		font-size: 28px;
+	}
+
+	p:not(:last-of-type) {
+		margin-bottom: 24px;
+	}
+
+	@include rhm-tablet {
+		font-size: 16px;
+	}
+}
+
+.articleContent {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.5;
+	color: $p_blue-dark;
+
+	p:not(:last-of-type) {
+		margin-bottom: 24px;
+	}
+
+	strong {
+		font-size: 28px;
+	}
+
+	ul, ol {
+		margin: 32px 0;
+
+		li:not(:last-of-type) {
+			margin-bottom: 4px;
+		}
+	}
+}

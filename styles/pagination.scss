@@ -1,0 +1,59 @@
+.pagination {
+	display: block;
+	margin-top: 80px;
+
+	ul {
+		display: block;
+		list-style: none;
+		padding: 0;
+		margin:  auto;
+		width: 100%;
+		text-align: center;
+	}
+
+	li {
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 2;
+		margin: 0 16px;
+		transition: all 0.3s linear;
+	}
+
+	li.nav {
+		font-size: 18px;
+		color: $sh_grey-mid;
+
+		&.currently,
+		&:hover {
+			color: $p_blue;
+		}
+	}
+
+	li.action {
+		width: 32px;
+		height: 32px;
+		background-color: $p_blue;
+		background-image: url('../assets/arrow.svg');
+		background-repeat: no-repeat;
+		background-size: 8px auto;
+		background-position: center;
+		border-radius: 50%;
+		transform: translateY(-2px);
+
+		&.disabled {
+			pointer-events: none;
+			filter: grayscale(100%);
+			opacity: 0.4;
+		}
+
+		&.prev {
+			margin-left: 0;
+			transform: rotate(-180deg) translateY(2px);
+		}
+
+		&.next {
+			margin-right: 0;
+		}
+	}
+}

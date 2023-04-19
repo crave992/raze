@@ -1,0 +1,22 @@
+.showcase {
+	cursor: pointer;
+}
+
+.image {
+	margin-bottom: 16px;
+
+	img {
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.title {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.type {
+	font-size: 18px;
+}

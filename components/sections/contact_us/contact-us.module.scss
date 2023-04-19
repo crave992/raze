@@ -1,0 +1,64 @@
+@import "styles/variables";
+
+.contactUs {
+	padding: 120px 0;
+	background-color: $sh_blue-dark;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	width: calc(100% / 12 * 10);
+	margin: 0 auto;
+
+	:global(.section__title_2) {
+		max-width: 320px;
+	}
+}
+
+.content, .form {
+	flex: 1;
+}
+
+.submit {
+	margin-top: 40px;
+}
+
+@include rhm-desktop {
+
+	.wrapper {
+		width: 100%;
+	}
+}
+
+@include rhm-tablet {
+
+	.contactUs {
+		margin-top: 120px;
+		position: relative;
+		padding: 160px 0 64px;
+	}
+
+	.wrapper {
+		display: block;
+
+		:global(.section__title_2) {
+			max-width: 100%;
+		}
+
+		:global(.rotateCircle) {
+			position: absolute;
+			width: 240px;
+			height: 240px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			top: -120px;
+		}
+	}
+
+	.submit {
+		margin-top: 24px;
+	}
+}

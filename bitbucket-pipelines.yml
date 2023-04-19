@@ -1,0 +1,53 @@
+image: node:17
+definitions:
+
+  caches:
+    yarncustom: /usr/local/share/.cache/yarn
+
+  steps:
+    - step: &Build-step
+        name: Build
+        caches:
+          - node
+          - yarncustom
+        script:
+          - yarn install
+          - yarn build:dev
+        artifacts:
+          - .next/**
+          - node_modules/**
+    - step: &Build-prod-step
+        name: Build Prod
+        caches:
+          - node
+          - yarncustom
+        script:
+          - yarn install
+          - yarn run build
+        artifacts:
+          - .next/**
+          - node_modules/**
+    - step: &Deploy-step
+        name: Deploy
+        script:
+          - pipe: atlassian/rsync-deploy:0.4.3
+            variables:
+              USER: $USER
+              SERVER: $SERVER
+              REMOTE_PATH: $REMOTE_PATH
+              LOCAL_PATH: '.'
+              EXTRA_ARGS: '--exclude-from=deployment-exclude-list.txt'
+pipelines:
+  branches:
+    development:
+      - step: *Build-step
+      - step:
+          <<: *Deploy-step
+          deployment: test
+    master:
+      - step: *Build-prod-step
+      - step:
+          trigger: manual
+          <<: *Deploy-step
+          deployment: production
+

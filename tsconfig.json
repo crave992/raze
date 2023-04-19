@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+
+      "@atoms/*": ["components/atoms/*"],
+      "@bundles/*": ["components/bundles/*"],
+      "@molecules/*": ["components/molecules/*"],
+      "@sections/*": ["components/sections/*"],
+      "@site/*": ["components/site/*"],
+
+      "@api/*": ["api/*"],
+      "@store/*": ["store/*"],
+      "@styles/*": ["styles/*"],
+      "@util/*": ["util/*"]
+    },
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,74 @@
+@import "styles/variables";
+
+.faq {
+	padding: 88px 0;
+	background-color: $account;
+
+	:global(.section__title_2) {
+		text-align: center;
+	}
+}
+
+.items {
+	max-width: calc(100% / 12 * 8);
+	margin: 24px auto 0;
+}
+
+.item {
+	border-bottom: 1px solid $grey2;
+	padding: 16px 0;
+
+	&.activate {
+
+		.question:before {
+			transform: rotate(180deg) translateY(50%);
+		}
+
+		.answer {
+			display: block;
+		}
+	}
+}
+
+.question {
+	position: relative;
+	cursor: pointer;
+	padding: 16px 24px 16px 0;
+	font-size: 28px;
+	font-weight: 300;
+
+	&:before {
+		content: '';
+		width: 16px;
+		height: 16px;
+		background: url('../../../assets/down.svg') no-repeat center;
+		background-size: 12px auto;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		transition: all 0.3s linear;
+	}
+
+}
+
+.answer {
+	display: none;
+	padding: 16px 0;
+}
+
+.text {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.75;
+	max-width: 80%;
+}
+
+.image {
+	margin-top: 24px;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+}

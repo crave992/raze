@@ -1,0 +1,50 @@
+@import "styles/variables";
+
+.ourTechnology {
+	margin: 120px auto 240px;
+
+	:global(.section__inner) {
+		position: relative;
+	}
+
+	:global(.section__title) {
+		margin: 8px 0;
+	}
+
+	.link {
+		margin-top: 32px;
+	}
+}
+
+.content {
+	width: calc(100% / 12 * 7);
+	margin-left: auto;
+
+	* {
+		max-width: 620px;
+	}
+}
+
+.images {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-top: 32px;
+}
+
+.image {
+	flex: 1 1 0;
+
+	img{
+		object-fit: cover;
+		object-position: center;
+	}
+
+	&:first-of-type {
+		transform: translateY(-240px);
+	}
+
+	&:nth-of-type(2) {
+		transform: translateY(120px);
+	}
+}

@@ -1,0 +1,101 @@
+@import "styles/variables";
+
+.gallery {
+	padding: 88px 0;
+
+	:global(.section__title_2) {
+		text-align: center;
+		width: calc(100% / 12 * 8);
+		margin: 0 auto 80px;
+	}
+
+	&.white {
+
+		.left {
+
+			:global(.slick-arrow) {
+				background-color: $p_blue !important;
+			}
+		}
+	}
+
+	&.gray {
+		background-color: $account;
+
+		.left {
+
+			:global(.slick-arrow) {
+				background-color: $p_blue !important;
+			}
+		}
+	}
+}
+
+.galleryWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	gap: 40px;
+}
+
+.left {
+	width: calc((100% - 40px) / 12 * 5);
+
+	.index {
+		color: $p_blue-dark;
+		font-weight: bold;
+		margin-bottom: 4px;
+	}
+
+	.description {
+		color: $black;
+		font-weight: 300;
+		font-size: 18px;
+	}
+
+	:global(.section__title) {
+		margin: 4px 0;
+	}
+
+	:global(.slick-arrow) {
+		width: 40px;
+		height: 40px;
+		top: inherit;
+		bottom: -88px;
+		background-size: 8px auto !important;
+	}
+
+	:global(.slick-arrow.slick-next) {
+		right: inherit;
+		left: 64px;
+	}
+
+	:global(.slick-arrow.slick-disabled) {
+		display: block !important;
+		opacity: 0.6;
+	}
+}
+
+.right {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc((100% - 40px) / 12 * 7);
+
+	.galleryCurrently {
+		width: calc(100% - 106px);
+	}
+
+	.galleryNav {
+		width: 106px;
+		padding-left: 16px;
+
+		:global(.slick-track) {
+			height: auto !important;
+		}
+	}
+
+	img {
+		width: 100%;
+		display: block;
+	}
+}

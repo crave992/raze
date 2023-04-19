@@ -1,0 +1,71 @@
+// Colors
+$p_blue: #1D5CA0;
+$p_blue-dark: #0C3159;
+$p_blue-deep: #0B2B4E;
+
+$s_pink: #DC7D66;
+$s_orange: #E08700;
+$s_green: #79A54E;
+$s_blue: #45ACA8;
+$s_red: #73210D;
+$s_yellow: #E9BB1A;
+
+$sh_black: #222222;
+$sh_white: #FFFFFF;
+$sh_grey-mid: #8D8D8D;
+$sh_grey-light: #D7DADD;
+$sh_blue: #7A8899;
+$sh_blue-dark: #85A3C5;
+
+$grey: #E5E5E5;
+$grey2: #EDEDED;
+
+$input-bg: #FAFAFA;
+$input-border: #E0E6EB;
+$input-error: #C72424;
+
+$account: #F6F6F2;
+$border: #F1F1F1;
+$black: #414141;
+
+$facebook: #1877F2;
+
+$white-bg: #F8F8F8;
+
+// Sizes
+$max-width: 1400px;
+
+// Font
+@font-face {
+	font-family: 'Larsseit';
+	src: url('../assets/Larsseit/Larsseit.woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url('../assets/Larsseit/Larsseit-Light.woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url('../assets/Larsseit/Larsseit-Bold.woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Larsseit';
+	src: url('../assets/Larsseit/Larsseit-Medium.woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+$font__larsseit: "Larsseit";
+$font__space: "Space Grotesk";
+$font__zan: "Zen Kurenaido";
+
+@import "breakpoint";

@@ -1,0 +1,36 @@
+.slick-arrow {
+	z-index: 1;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-image: url('../assets/arrow.svg') !important;
+	background-size: 32px auto !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-color: $s_blue !important;
+
+	&:hover {
+		background-image: url('../assets/arrow.svg') !important;
+		background-size: 32px auto !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+		background-color: $s_blue !important;
+	}
+
+	&:before {
+		content: none;
+	}
+
+	&.slick-disabled {
+		display: none !important;
+	}
+
+	&.slick-prev {
+		left: 0;
+		transform: rotate(180deg) translateY(50%);
+	}
+
+	&.slick-next {
+		right: 0;
+	}
+}

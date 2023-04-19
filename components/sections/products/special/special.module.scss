@@ -1,0 +1,20 @@
+@import "styles/variables";
+
+.special {
+	padding: 88px 0;
+
+	&.gray {
+		background-color: $grey;
+	}
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	gap: 40px;
+
+	& > div {
+		width: calc((100% - 80px) / 3);
+	}
+}

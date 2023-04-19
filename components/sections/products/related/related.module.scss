@@ -1,0 +1,20 @@
+@import "styles/variables";
+
+.productRelated {
+	margin: 88px auto;
+
+	:global(.section__title_2) {
+		text-align: center;
+		margin-bottom: 48px;
+	}
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+
+	& > div {
+		width: calc(100% / 3);
+	}
+}

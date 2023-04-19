@@ -1,0 +1,56 @@
+@import "styles/variables";
+
+.storeLocatorBanner {
+	position: relative;
+	padding: 176px 0 104px;
+}
+
+.contentWrapper {
+	position: relative;
+	z-index: 1;
+}
+
+.mediaWrapper {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	&:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $sh_blue-dark;
+		opacity: 0.9;
+		z-index: 1;
+	}
+}
+
+.description {
+	font-size: 24px;
+	font-weight: 300;
+	color: $sh_white;
+	max-width: 980px;
+	margin: 16px 0 24px;
+	line-height: 1.5;
+}
+
+.storeType {
+	position: relative;
+	margin-top: 24px;
+	z-index: 1;
+
+	:global(label) {
+		font-size: 14px;
+		color: $sh_white;
+	}
+
+	:global(.selectWrapper) {
+		max-width: 320px;
+	}
+}

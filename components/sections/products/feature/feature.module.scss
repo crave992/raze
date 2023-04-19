@@ -1,0 +1,67 @@
+@import "styles/variables";
+
+.productFeature {
+	padding: 60px 0;
+	background-color: $grey;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.featureContent {
+	flex: 1 1 65%;
+	padding-right: 40px;
+}
+
+.subContent {
+	flex: 1 1 35%;
+	padding-left: 40px;
+	border-left: 1px solid $sh_grey-light;
+}
+
+.title {
+	font-size: 28px;
+	margin-bottom: 16px;
+}
+
+.description {
+	font-size: 14px;
+
+	p {
+		margin-bottom: 16px;
+	}
+}
+
+.link {
+	margin-top: 40px;
+}
+
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.feature {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: calc(50% - 20px);
+
+	.featureImage {
+		width: 60px;
+
+		img {
+			border-radius: 50%;
+			overflow: hidden;
+		}
+	}
+
+	.featureTitle {
+		width: calc(100% - 60px);
+		padding-left: 24px;
+		font-size: 14px;
+	}
+}

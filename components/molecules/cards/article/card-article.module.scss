@@ -1,0 +1,40 @@
+@import "styles/variables";
+
+.card{
+  cursor: pointer;
+}
+.image{
+  margin-bottom: 24px;
+  img{
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.category {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $s_orange;
+}
+
+.title {
+  font-size: 28px;
+  margin: 4px 0;
+}
+
+.created {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.summary {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.link {
+  margin-top: 32px;
+}

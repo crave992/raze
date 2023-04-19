@@ -1,0 +1,44 @@
+@import "styles/variables";
+
+.allNews {
+	padding: 120px 0;
+	background-color: $account;
+
+	:global(.pagination) {
+		margin: 288px auto 0;
+		width: calc(100% / 12 * 10);
+
+		ul {
+			text-align: right;
+		}
+	}
+}
+
+.titleWrapper {
+	position: relative;
+	margin-bottom: 48px;
+	padding-left: calc(100% / 12);
+
+	:global(.selectField) {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.articles {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100% / 12 * 10);
+	margin: 0 auto;
+	gap: 40px;
+
+	& > div {
+		width: calc((100% - 40px) / 2);
+
+		&:nth-of-type(2n) {
+			transform: translateY(120px);
+		}
+	}
+}

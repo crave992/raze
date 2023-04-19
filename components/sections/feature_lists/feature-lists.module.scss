@@ -1,0 +1,36 @@
+.featureLists {
+	margin: 88px auto;
+}
+
+.title {
+	font-size: 28px;
+	text-align: center;
+	width: calc(100% / 12 * 10);
+	margin: 0 auto;
+	font-weight: 300;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px 64px;
+	margin: 64px auto 0;
+}
+
+.item {
+	width: calc((100% - 80px) / 3);
+}
+
+.image {
+	margin-bottom: 24px;
+
+	img {
+		display: block;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+}
+
+.name {
+	font-size: 18px;
+}

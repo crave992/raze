@@ -1,0 +1,89 @@
+@import "styles/variables";
+
+.bookingSummary {
+	background-color: $sh_white;
+	border-radius: 6px;
+	padding: 48px 40px;
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid $border;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.edit {
+	font-family: $font-_space;
+	text-transform: uppercase;
+	color: $p_blue;
+	font-weight: bold;
+	padding-right: 18px;
+	background: url('../../../assets/edit.svg') no-repeat right center;
+	background-size: 15px auto;
+	margin-left: auto;
+}
+
+.items {
+	padding-bottom: 8px;
+	border-bottom: 1px solid $border;
+	margin-bottom: 24px;
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 16px 0;
+
+	.image {
+		width: 90px;
+	}
+
+	.details {
+		width: calc(100% - 90px);
+		padding-left: 16px;
+	}
+
+	.name {
+		font-size: 16px;
+		color: $p_blue-dark;
+		margin-bottom: 8px;
+	}
+
+	.dates {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px;
+		font-size: 14px;
+	}
+
+	.date {
+	width: calc((100% - 24px) / 2);
+	}
+
+	.label {
+		color: $sh_grey-mid;
+		font-weight: 300;
+	}
+
+	.value {
+		color: $p_blue-dark;
+		font-weight: bold;
+	}
+}
+
+.totalWrapper {
+	color: $black;
+	font-size: 14px;
+
+	.label {
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+}

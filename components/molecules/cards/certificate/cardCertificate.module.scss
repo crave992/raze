@@ -1,0 +1,19 @@
+@import "styles/variables";
+
+.certificate {
+	background-color: $sh_white;
+	padding: 56px 48px;
+}
+
+.title {
+	font-size: 18px;
+	font-weight: bold;
+	color: $sh_black;
+	margin-bottom: 8px;
+}
+
+.description {
+	font-size: 14px;
+	color: $black;
+	margin-bottom: 40px;
+}

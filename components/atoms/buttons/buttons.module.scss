@@ -1,0 +1,122 @@
+@import "styles/variables";
+
+.primary {
+	cursor: pointer;
+	font-family: $font__space;
+	font-weight: bold;
+	font-size: 18px;
+	color: $p_blue;
+	padding: 16px 56px 16px 32px;
+	border: 1px solid $p_blue;
+	border-radius: 90px;
+	text-transform: uppercase;
+	transition: all 0.3s linear;
+	background: url('../../../assets/btn-arrow.svg') no-repeat calc(100% - 24px) center transparent;
+	background-size: 23px auto;
+
+	&:not(:disabled):hover {
+		color: $sh_white;
+		background: url('../../../assets/btn-arrow-white.svg') no-repeat calc(100% - 24px) center $p_blue;
+		background-size: 23px auto;
+	}
+
+	&.noRadius {
+		border-radius: 0;
+	}
+
+	&.white {
+		color: $sh_white;
+		border-color: $sh_white;
+		background: url('../../../assets/btn-arrow-white.svg') no-repeat calc(100% - 24px) center transparent;
+		background-size: 23px auto;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		color: $sh_grey-light;
+		border-color: $sh_grey-light;
+	}
+}
+
+.secondary {
+	cursor: pointer;
+	font-family: $font__space;
+	font-weight: bold;
+	font-size: 18px;
+	color: $p_blue;
+	padding: 0 32px 0 0;
+	text-transform: uppercase;
+	transition: all 0.3s linear;
+	border: 0;
+	background: url('../../../assets/btn-arrow.svg') no-repeat right center transparent;
+	background-size: 23px auto;
+
+	&:hover {
+		opacity: 0.5;
+	}
+
+	&.disabled {
+		color: $sh_grey-light;
+		border-color: $sh_grey-light;
+		pointer-events: none;
+	}
+
+	&.isLeft {
+		padding: 0 0 0 32px;
+	}
+
+	&.white {
+		color: $sh_white;
+		background: url('../../../assets/btn-arrow-white.svg') no-repeat right center transparent;
+		background-size: 23px auto;
+	}
+
+	&.blue {
+		color: $s_blue;
+	}
+
+	&.red {
+		color: $s_red;
+	}
+}
+
+.text {
+	display: inline;
+	cursor: pointer;
+	font-size: 14px;
+	color: $p_blue-dark;
+	transition: all 0.3s linear;
+	text-decoration: underline;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+
+	&:hover {
+		color: $p_blue;
+	}
+
+	&.disabled {
+		color: $sh_grey-light;
+		pointer-events: none;
+	}
+}
+
+.social {
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0;
+	border-radius: 10px;
+	padding: 16px 32px 16px 56px;
+	min-width: 220px;
+
+	&.facebook {
+		color: $sh_white;
+		background-color: $facebook;
+	}
+
+	&.google {
+		color: $sh_grey-mid;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+	}
+}

@@ -1,0 +1,158 @@
+{
+  "checkout": {
+    "cart": {
+      "title": "Shopping Cart"
+    },
+    "summary": {
+      "title": "Order Summary",
+      "edit": "Edit"
+    },
+    "promo": {
+      "apply": "Apply",
+      "placeholder": "Promo Code",
+      "msg.100": "The provided coupon code is not available. It may have expired or already been used.",
+      "msg.300": "The provided coupon code cannot be applied to your order.",
+      "msg.200": "Coupon apply success!"
+    },
+    "delivery": {
+      "headline": "Delivery Details"
+    },
+    "breadcrumb": {
+      "login": "Login",
+      "delivery": "Delivery",
+      "billing": "Billing"
+    },
+    "success": {
+      "title": "Order Successful",
+      "subtitle": "You will also receive an email with the order details.",
+      "detailTitle": "Your order #{{orderNumber}}",
+      "detailSubtitle": "Your estimated delivery date for this order is 3-5 working days"
+    },
+    "title": "Check Out",
+    "quantity": "Quantity",
+    "subtotal": "Sub-total",
+    "total": "Total",
+    "checkout": "Check Out",
+    "continue.shopping": "Continue Shopping",
+    "shipping": "Shipping",
+    "discount": "Discount"
+  },
+  "account": {
+    "me.title": "About Me",
+    "history": {
+      "title": "Order History",
+      "headline": "Below is your order history for the last 6 months.",
+      "modalTitle": "Your order #{{orderNumber}}",
+      "modalSubtitle": "Your estimated delivery date for this order is 3-5 working days",
+      "number": "Order No.",
+      "date": "Ordered Date",
+      "status": "Status",
+      "delivery": "Deliver Date",
+      "quantity": "Quantity",
+      "amount": "Amount",
+      "track": " ( Track ) "
+    },
+    "address": {
+      "title": "Address",
+      "default": "Default Address",
+      "other": "Other Address",
+      "add": "Add Address",
+      "set.default": "Set as default address",
+      "confirm": "Confirm to remove the address?",
+      "confirmed": "Remove Now",
+      "update": "Update Address",
+      "new": "New Address"
+    },
+    "payment": {
+      "title": "Payment details",
+      "default": "Default Method",
+      "other": "Other Method",
+      "add": "Add Payment Method",
+      "set.default": "Set as default method",
+      "confirm": "Confirm to remove the payment method?",
+      "confirmed": "Remove Now"
+    },
+    "password.title": "Change Password",
+    "logout": {
+      "title": "Logout",
+      "confirm": "Confirm to Logout?",
+      "confirmed": "Logout Now"
+    }
+  },
+  "button": {
+    "update": "Update",
+    "continue": "Continue",
+    "save": "Save",
+    "send": "Send",
+    "readMore": "Read More"
+  },
+  "label": {
+    "name": "Full Name",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "company": "Company",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "postal": "Postal",
+    "birth": "Date of Birth",
+    "apartment": "Apartment, Suite, Building",
+    "password": "Password",
+    "password.Re": "Confirm Password",
+    "day": "day",
+    "offers": "I’d like to receive news and offers",
+    "policy": "I agree to the shop’s Terms of service and Privacy Policy",
+    "select": "- Select -",
+    "country": "Country",
+    "district": "District",
+    "country.select": "-- Select Country --",
+    "contact.type": "Resident / Business",
+    "contact.type.resident": "Resident",
+    "contact.type.business": "Business"
+  },
+  "error": {
+    "required": "This field required",
+    "phone": "Invalidate Phone Number",
+    "password": "Password must have at least 8 characters",
+    "password.notMatch": "Passwords do not match"
+  },
+  "product": {
+    "comingSoon": "Products Coming Soon",
+    "coat": {
+      "preferred_1": "Preferred Date",
+      "preferred_2": "2nd Preferred Date"
+    },
+    "label": {
+      "size": "Salable area",
+      "proceed": "Proceed"
+    }
+  },
+  "article": {
+    "created": "Posted by {{author}}"
+  },
+  "copyright": "Copyright © Raze, {{year}}. All Rights Reserved",
+  "login": {
+    "login": "Login",
+    "activate.account": "Activate Account",
+    "registration.successful": "Registration Successful",
+    "register": "Register",
+    "forgot": {
+      "password": "Forgot Password",
+      "text": "Please enter registered email so we will send you a reset password link."
+    }
+  },
+  "appointment": {
+    "title": "Appointment",
+    "total": "Amount will be determined during consultation",
+    "details.headline": "Details",
+    "address.headline": "Coating Address",
+    "summary.title": "Booking Summary",
+    "confirm": "Confirm Booking"
+  },
+  "404": {
+    "title": "404 Page Not Found",
+    "button": "Back to homepage"
+  }
+}

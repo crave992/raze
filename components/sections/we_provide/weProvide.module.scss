@@ -1,0 +1,14 @@
+@import "styles/variables";
+
+.weProvide {
+	text-align: center;
+	padding: 120px 0;
+	background-color: $sh_blue-dark;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 48px auto 0;
+	max-width: calc(100% / 12 * 10);
+}

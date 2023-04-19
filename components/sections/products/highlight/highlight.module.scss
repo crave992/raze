@@ -1,0 +1,42 @@
+@import "styles/variables";
+
+.productHighlight {
+	margin: 180px auto;
+
+	&.blue {
+		margin: 0;
+		padding: 120px 0;
+		background-color: $sh_blue-dark;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	max-width: calc(100% / 12 * 10);
+	margin: 0 auto;
+}
+
+.image {
+	width: 45%;
+
+	img {
+		display: block;
+		object-fit: cover;
+	}
+}
+
+.content {
+	width: 55%;
+	padding-left: calc(5% + 40px);
+
+	:global(.section__title_2) {
+		margin: 8px 0 16px;
+	}
+
+	.link {
+		margin-top: 48px;
+	}
+}

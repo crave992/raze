@@ -1,0 +1,60 @@
+@import "styles/variables";
+
+.howItWorks {
+	margin: 88px 0 0;
+	background-color: rgba(215, 218, 221, 0.4);
+
+	:global(.section__title_2) {
+		text-align: center;
+		background-color: $sh_white;
+		padding-bottom: 88px;
+	}
+
+	:global(.section__headline) {
+		margin-bottom: 8px;
+	}
+}
+
+.noTitle {
+	margin: 0;
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&:nth-of-type(2n) {
+		flex-direction: row-reverse;
+	}
+}
+
+.content {
+	width: 50%;
+	padding: 0 8%;
+}
+
+.image {
+	width: 50%;
+	line-height: 0;
+
+	img {
+		display: block;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.title {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 8px;
+	max-width: 600px;
+}
+
+.description {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 2;
+	max-width: 600px;
+}

@@ -1,0 +1,18 @@
+.fieldset {
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	margin-bottom: 8px;
+
+	& > div {
+		width: calc((100% - 32px) / 2);
+	}
+}
+
+.registerForm {
+
+	& > button {
+		margin-top: 48px;
+	}
+}

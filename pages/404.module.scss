@@ -1,0 +1,38 @@
+.custom404 {
+	padding: 344px 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	width: calc(100% / 12 * 8);
+	margin: 0 auto;
+}
+
+.image, .content {
+	width: calc((100% - 40px) / 2);
+}
+
+.image {
+	position: relative;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+
+	:global(.rotateCircle) {
+		position: absolute;
+		bottom: 40px;
+		left: -150px;
+	}
+}
+
+.content {
+	padding-top: 64px;
+
+	:global(.node__title) {
+		margin-bottom: 64px;
+	}
+}

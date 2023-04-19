@@ -1,0 +1,86 @@
+@import "styles/variables";
+
+.article {
+  background-color: $grey;
+}
+
+.titleWrapper {
+  margin: 48px auto;
+  text-align: center;
+
+  :global(.section__title_2) {
+    margin: 8px auto 32px;
+    width: calc(100% / 12 * 10);
+  }
+}
+
+.featureImage {
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.bodyWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 48px auto;
+
+  .share {
+    width: calc(100% / 12 * 2);
+  }
+
+  .body {
+    width: calc(100% / 12 * 9);
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 40px;
+
+    .image {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .label {
+    color: $p_blue-deep;
+  }
+
+  .platform {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.latest {
+	padding: 96px 0;
+	background-color: $sh_white;
+
+	:global(.section__title_2) {
+		text-align: center;
+	}
+}
+
+.moreArticles {
+	margin-top: 48px;
+
+	:global(.cardArticle) {
+		margin: 0 16px;
+	}
+}

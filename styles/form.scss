@@ -1,0 +1,179 @@
+.fieldSet {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+
+	& > div {
+		width: calc((100% - 32px) / 2);
+
+		&:nth-of-type(2n) {
+			margin-left: 32px;
+		}
+	}
+
+	@include rhm-tablet {
+		display: block;
+
+		& > div {
+			width: 100%;
+
+			&:nth-of-type(2n) {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.selectField {
+	margin-bottom: 16px;
+
+	label {
+		color: $sh_blue;
+		font-size: 14px;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	&.white {
+
+		label {
+			color: $sh_white;
+		}
+	}
+
+	.selectWrapper {
+		position: relative;
+
+		&:before {
+			content: '';
+			width: 8px;
+			height: 20px;
+			background: url('../assets/down.svg') no-repeat center;
+			background-size: 100% auto;
+			position: absolute;
+			top: 50%;
+			right: 16px;
+			transform: translateY(-50%);
+		}
+	}
+
+	select {
+		width: 100%;
+		color: $p_blue-deep;
+		border-radius: 6px;
+		border: 1px solid $input-border;
+		background: $sh_white;
+		padding: 14px 48px 14px 20px;
+		transition: all 0.3s linear;
+		font-weight: 300;
+
+		&:focus,
+		&:focus-visible {
+			border-color: $sh_blue-dark;
+		}
+	}
+}
+
+.stripeEle {
+
+	label {
+		color: $sh_blue;
+		font-size: 14px;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.stripeInput {
+		background-color: $input-bg;
+		border-radius: 6px;
+		padding: 15px 20px 15px;
+		border: 1px solid $input-border;
+		transition: all 0.3s linear;
+
+		&.disabled {
+			padding: 11px 20px;
+
+			input {
+				width: 100%;
+				border: 0;
+				background-color: transparent;
+				padding: 0;
+				color: $p_blue-deep;
+				font-weight: 300;
+				line-height: 1;
+			}
+		}
+
+		&:focus {
+			border-color: $sh_blue-dark;
+		}
+	}
+}
+
+.textareaField {
+
+	label {
+		color: $sh_blue;
+		font-size: 14px;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	&.white {
+
+		label {
+			color: $sh_white;
+		}
+	}
+
+
+	textarea {
+		width: 100%;
+		height: 160px;
+		resize: none;
+		border: 0;
+		border-radius: 6px;
+		padding: 16px;
+		color: $p_blue-deep;
+		font-weight: 300;
+
+		&::placeholder {
+			color: $sh_grey-mid;
+		}
+	}
+}
+
+.dateField {
+
+	label {
+		color: $p_blue-dark;
+		font-size: 14px;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.react-datepicker__input-container input {
+		color: $p_blue-deep;
+		font-size: 16px;
+		line-height: 1;
+		font-weight: 300;
+		width: 100%;
+		padding: 18px 20px 15px;
+		border: 1px solid $sh_blue-dark;
+		border-radius: 6px;
+		background: url('../assets/calendar.svg') no-repeat calc(100% - 20px) center;
+		background-size: 18px auto;
+	}
+}
+
+.formError {
+	font-size: 14px;
+	color: $input-error;
+	transform: translateY(8px);
+}
+
+.formSuccess {
+	font-size: 14px;
+	color: $s_green;
+	transform: translateY(8px);
+}

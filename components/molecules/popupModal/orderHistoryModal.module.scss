@@ -1,0 +1,101 @@
+@import "styles/variables";
+
+.orderHistoryPopupModal {
+	font-family: $font__larsseit;
+	font-weight: 300;
+	padding: 48px 56px 64px 56px;
+
+	.modalTitle {
+		font-size: 28px;
+		color: $black;
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+
+	.modalSubtitle {
+		font-size: 18px;
+		font-weight: 400;
+		color: $black;
+	}
+
+	.modalRow {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.modalRowHead {
+		padding-bottom: 4px;
+		margin-top: 24px;
+
+		.modalColumn {
+			font-size: 16px;
+		}
+	}
+
+	.modalRowBody {
+		padding: 16px 0;
+	}
+
+	.modalColumn {
+		font-size: 18px;
+		color: $p_blue-dark;
+		width: calc(((100% - 160px) - 40%) / 2);
+
+		&.image {
+			width: 160px;
+		}
+
+		&.title {
+			width: 40%;
+		}
+
+		&.quantity {
+			text-align: center;
+		}
+
+		&.amount {
+			text-align: right;
+		}
+	}
+
+	.modalFooter {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 16px;
+		padding-top: 32px;
+		border-top: 1px solid $border;
+	}
+
+	.modalAddress {
+		width: calc(100% - 300px);
+		padding-right: 32px;
+	}
+
+	.modalAmount {
+		width: 300px;
+
+		margin-left: auto;
+
+		.amountRow {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 4px;
+		}
+
+		.amountLabel {
+			font-size: 14px;
+		}
+
+		.amountValue {
+			font-size: 18px;
+			text-align: right;
+			margin-left: auto;
+
+			&.totalPrice {
+				font-weight: bold;
+				color: $s_orange;
+			}
+		}
+	}
+}

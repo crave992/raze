@@ -1,0 +1,38 @@
+@import "styles/variables";
+
+.productArchive {
+	padding: 120px 0;
+
+	&.white {
+		background-color: $sh_white;
+	}
+
+	&.gray {
+		background-color: $grey;
+	}
+
+	:global(.section__headline) {
+		margin-bottom: 8px;
+	}
+
+	:global(.section__title_2) {
+		margin-bottom: 24px;
+	}
+
+	.productSection {
+
+		&:not(:last-of-type) {
+			margin-bottom: 80px;
+		}
+	}
+
+	.items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+
+		& > div {
+			width: calc((100% - 80px) / 3);
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.introduction {
+	margin: 96px auto;
+	text-align: center;
+
+	:global(.section__description) {
+		width: calc(100% / 12 * 10);
+		margin: 16px auto;
+	}
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 80px auto;
+	max-width: calc(100% / 12 * 10);
+}
+
+.logos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	.logo {
+		margin: 0 40px;
+
+		&:first-of-type {
+			margin-left: 0;
+		}
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	img {
+		display: block;
+		max-width: 155px;
+	}
+}
+
+.link {
+	margin-top: 64px;
+}

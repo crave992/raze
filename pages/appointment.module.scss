@@ -1,0 +1,117 @@
+@import "styles/variables";
+
+.title {
+	font-family: $font__zan;
+	font-size: 44px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.subtitle {
+	font-size: 24px;
+	font-weight: 300;
+	color: $p_blue-deep;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	padding-bottom: 80px;
+}
+
+.primary {
+	padding: 48px 64px;
+	background-color: $sh_white;
+	border-radius: 6px;
+	width: calc((100% - 40px) / 12 * 7);
+}
+
+.secondary {
+	width: calc((100% - 40px) / 12 * 5);
+}
+
+.headline {
+	font-size: 24px;
+	font-weight: 300;
+	color: $p_blue-dark;
+	margin-bottom: 24px;
+}
+
+.group {
+	margin-bottom: 48px;
+}
+
+.confirmedWrapper {
+	padding-top: 48px;
+
+	.icon {
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		background: url('../assets/success.svg') no-repeat center $sh_blue-dark;
+		background-size: 40px auto;
+		margin: 0 auto 40px;
+	}
+
+	.title,
+	.subtitle {
+		text-align: center;
+	}
+
+	.title {
+		margin-bottom: 16px;
+	}
+
+	.subtitle {
+		margin-bottom: 40px;
+	}
+
+	.coatingDetail {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 32px 24px;
+		width: 100%;
+		max-width: 580px;
+		margin: 0 auto;
+		border-radius: 6px;
+		background-color: $sh_white;
+
+		.image {
+			width: 90px;
+		}
+
+		.details {
+			width: calc(100% - 90px);
+			padding-left: 16px;
+		}
+
+		.name {
+			font-size: 16px;
+			color: $p_blue-dark;
+			margin-bottom: 8px;
+		}
+
+		.dates {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 24px;
+			font-size: 14px;
+		}
+
+		.date {
+			width: calc((100% - 24px) / 2);
+		}
+
+		.label {
+			color: $sh_grey-mid;
+			font-weight: 300;
+		}
+
+		.value {
+			color: $p_blue-dark;
+			font-weight: bold;
+		}
+	}
+}

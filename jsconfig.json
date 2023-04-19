@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+
+      "@atoms/*": ["components/atoms/*"],
+      "@bundles/*": ["components/bundles/*"],
+      "@molecules/*": ["components/molecules/*"],
+      "@sections/*": ["components/sections/*"],
+      "@site/*": ["components/site/*"],
+
+      "@api/*": ["api/*"],
+      "@store/*": ["store/*"],
+      "@styles/*": ["styles/*"],
+      "@util/*": ["util/*"]
+    }
+  }
+}

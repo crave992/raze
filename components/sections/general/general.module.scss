@@ -1,0 +1,74 @@
+@import "styles/variables";
+
+.general {
+	padding: 96px 0;
+}
+
+.content {
+	width: calc(100% / 12 * 8);
+	margin: 0 auto;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.5;
+	color: $p_blue-dark;
+
+	p:not(:last-of-type) {
+			margin-bottom: 24px;
+	}
+
+	strong {
+		font-size: 18px;
+	}
+
+	h2, h3, h4 {
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-bottom: 48px;
+		font-family: $font__zan;
+	}
+
+	h2 {
+		font-size: 44px;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 38px;
+	}
+
+	h4 {
+		font-size: 30px;
+	}
+
+	table {
+		width: 100% !important;
+		border: 0;
+		font-size: 16px;
+		margin: 16px 0 24px;
+
+		thead {
+			background-color: $sh_blue-dark;
+			color: $sh_white;
+			font-weight: bold;
+		}
+
+		th {
+			padding: 16px 32px;
+
+			&:first-child {
+				border-left-style: solid;
+				border-top-left-radius: 6px;
+				border-bottom-left-radius: 6px;
+			}
+			&:last-child {
+				border-right-style: solid;
+				border-bottom-right-radius: 6px;
+				border-top-right-radius: 6px;
+			}
+		}
+
+		td {
+			padding: 24px 32px;
+		}
+	}
+}

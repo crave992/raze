@@ -1,0 +1,15 @@
+$large: 1280px;
+$medium: 768px;
+
+
+@mixin rhm-desktop {
+	@media (max-width: #{$large - 1px}) {
+		@content;
+	}
+}
+
+@mixin rhm-tablet {
+	@media (max-width: #{$medium - 1px}) {
+		@content;
+	}
+}

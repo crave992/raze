@@ -1,0 +1,40 @@
+.certificate {
+	padding: 120px 0;
+	background: url('../../../assets/certificate-bg.jpg') no-repeat center;
+	background-size: cover;
+
+	:global(.pagination) {
+		margin-left: auto;
+	}
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100% / 12 * 10);
+	margin: 0 auto 48px;
+
+	:global(.section__title_2),
+	:global(.section__description) {
+		width: 50%;
+	}
+
+	:global(.section__title_2) {
+		padding-right: calc(8% + 40px);
+	}
+
+	:global(.section__description) {
+		color: #202B5F;
+	}
+}
+
+.certificates {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin: 48px auto 56px;
+
+	& > div {
+		width: calc((100% - 40px) / 2);
+	}
+}

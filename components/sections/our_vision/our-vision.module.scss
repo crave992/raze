@@ -1,0 +1,39 @@
+.ourVision {
+	margin: 120px auto 0;
+}
+
+.ourVisionContent {
+	position: relative;
+	width: 90%;
+	margin-left: auto;
+
+	:global(.section__headline) {
+		margin-bottom: 8px;
+	}
+
+	:global(.section__title) {
+		width: 80%;
+	}
+}
+
+.link {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.ourVisionImages {
+	width: calc(90% + 20px);
+	margin-top: 40px;
+	margin-left: auto;
+}
+
+.image {
+	max-width: 950px;
+	padding: 0 8px;
+
+	img {
+		width: 100%;
+		height: 550px;
+	}
+}

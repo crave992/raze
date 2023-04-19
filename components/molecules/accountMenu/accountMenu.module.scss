@@ -1,0 +1,77 @@
+@import "styles/variables";
+
+.accountMenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		cursor: pointer;
+		position: relative;
+		padding-left: 80px;
+		margin-bottom: 16px;
+
+		a {
+			font-size: 16px;
+			color: $p_blue-dark;
+		}
+
+		&.aboutMe a {
+				background: url('../../../assets/aboutMe.svg') no-repeat left center;
+				background-size: 16px auto;
+		}
+
+		&.history a {
+			background: url('../../../assets/orderHistory.svg') no-repeat left center;
+			background-size: 13px auto;
+		}
+
+		&.address a {
+			background: url('../../../assets/address.svg') no-repeat left center;
+			background-size: 13px auto;
+		}
+
+		&.payment a {
+			background: url('../../../assets/payment.svg') no-repeat left center;
+			background-size: 17px auto;
+		}
+
+		&.password a {
+			background: url('../../../assets/password.svg') no-repeat left center;
+			background-size: 15px auto;
+		}
+
+		&.logout a {
+			background: url('../../../assets/logout.svg') no-repeat left center;
+			background-size: 15px auto;
+		}
+
+		a {
+			padding: 8px 0 8px 24px;
+			transition: all 0.3s linear;
+		}
+
+		&:before {
+			content: '';
+			left: 0;
+			top: 0;
+			width: 0;
+			height: 100%;
+			background-color: $p_blue;
+			position: absolute;
+			transition: all 0.3s linear;
+		}
+
+		&:hover,
+		&.active {
+
+			&:before {
+				width: 6px;
+			}
+
+			a {
+				font-weight: bold;
+			}
+		}
+	}
+}

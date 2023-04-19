@@ -1,0 +1,31 @@
+@import "styles/variables";
+
+.breadcrumb{
+  margin: 20px 0 0;
+}
+
+.checkoutBreadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 32px;
+
+  span {
+    cursor: initial;
+    font-size: 14px;
+    font-weight: 300;
+    color: $sh_blue;
+
+    &.active {
+      font-weight: bold;
+      color: $p_blue;
+    }
+  }
+
+  .arrow {
+    width: 5px;
+    background: url('../../../assets/arrow.svg') no-repeat center;
+    background-size: auto 8px;
+    margin: 0 8px;
+  }
+}

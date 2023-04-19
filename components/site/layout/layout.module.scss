@@ -1,0 +1,20 @@
+.main{
+  position: relative;
+  min-height: calc(100vh - 144px);
+  //padding-top: 144px;
+}
+
+.accountLayout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.accountSidebar {
+  width: 300px;
+}
+
+.accountMain {
+  width: calc(100% - 300px);
+}
+

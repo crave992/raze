@@ -1,0 +1,36 @@
+@import "styles/variables";
+
+.latestNews {
+	margin: 120px auto;
+
+	:global(.section__inner) {
+		position: relative;
+	}
+
+	:global(.section__title) {
+		margin: 8px auto;
+	}
+
+	.link {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.news {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-top: 24px;
+
+	.featured, .normal {
+		flex: 1 1 0;
+	}
+}
+
+.normal > div:not(:last-of-type) {
+	margin-bottom: 32px;
+	padding-bottom: 32px;
+	border-bottom: 1px solid $border;
+}

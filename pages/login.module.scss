@@ -1,0 +1,68 @@
+@import "styles/variables";
+
+.login__container {
+	display: block;
+}
+
+.login__wrapper {
+	padding: 80px;
+	width: 60vw;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: 40vw;
+
+	.login__title__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding-bottom: 8px;
+		margin-bottom: 24px;
+		border-bottom: 1px solid $grey2;
+	}
+
+	.login__title {
+		font-size: 24px;
+		font-weight: 400;
+		color: $p_blue-dark;
+	}
+
+	.login__subtitle {
+		font-size: 18px;
+		font-family: $font__space;
+		color: $p_blue;
+		text-transform: uppercase;
+		margin-left: auto;
+		padding-left: 28px;
+	}
+
+	.login__register {
+		background: url('../assets/account.svg') no-repeat center;
+		background-size: 18px auto;
+		background-position: left center;
+	}
+
+	.login__login {
+		background: url('../assets/login.svg') no-repeat center;
+		background-size: 18px auto;
+		background-position: left center;
+	}
+}
+
+.login__background {
+	width: 40vw;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.passwordForm {
+
+	p {
+		margin-bottom: 24px;
+	}
+
+	& > button {
+		margin-top: 48px;
+	}
+}

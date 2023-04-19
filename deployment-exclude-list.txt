@@ -1,0 +1,6 @@
+bitbucket-pipelines.yml
+deployment-exclude-list.txt
+.bitbucket
+.git
+php.ini
+.env.local

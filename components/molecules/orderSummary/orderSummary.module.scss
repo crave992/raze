@@ -1,0 +1,168 @@
+@import "styles/variables";
+
+.orderSummary {
+	background-color: $sh_white;
+	border-radius: 6px;
+	padding: 48px 40px;
+}
+
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid $border;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.edit {
+	font-family: $font-_space;
+	text-transform: uppercase;
+	color: $p_blue;
+	font-weight: bold;
+	padding-right: 18px;
+	background: url('../../../assets/edit.svg') no-repeat right center;
+	background-size: 15px auto;
+	margin-left: auto;
+}
+
+.items {
+	padding-bottom: 8px;
+	border-bottom: 1px solid $border;
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 16px 0;
+
+	.image {
+		width: 90px;
+	}
+
+	.details {
+		width: calc(100% - 90px);
+		padding-left: 16px;
+	}
+
+	.name {
+		font-size: 16px;
+		color: $p_blue-dark;
+		margin-bottom: 24px;
+	}
+
+	.tag {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 14px;
+		font-weight: 300;
+
+		& > span:last-of-type {
+			margin-left: auto;
+		}
+	}
+}
+
+.promoCodeWrapper {
+	padding: 24px 0;
+	border-bottom: 1px solid $border;
+
+	.promoForm,
+	.promoApplied {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.promoInput {
+		width: calc(100% - 120px - 8px);
+	}
+
+	.promoSubmit {
+		cursor: pointer;
+		width: 120px;
+		margin-left: 8px;
+		font-size: 18px;
+		font-family: $font__space;
+		color: $sh_white;
+		font-weight: bold;
+		background-color: $p_blue;
+		border-radius: 6px;
+		text-transform: uppercase;
+		padding: 12px 8px;
+		text-align: center;
+	}
+
+	.promoMsg {
+		font-size: 13px;
+		margin-top: 8px;
+	}
+
+	.content {
+		width: calc(100% - 68px);
+
+		.label {
+			font-size: 14px;
+			font-weight: 300;
+		}
+
+		.value {
+			font-size: 16px;
+			font-weight: bold;
+		}
+	}
+
+	.removeBtn {
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		border-radius: 6px;
+		border: 1px solid $border;
+		background: url('../../../assets/delete.svg') no-repeat center;
+		background-size: 18px auto;
+		margin-left: auto;
+	}
+}
+
+.adjustmentsWrapper {
+	font-weight: 300;
+	font-size: 14px;
+	color: $p_blue-dark;
+	padding: 16px 0;
+
+	.dataSet {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 4px 0;
+	}
+
+	.value {
+		font-weight: bold;
+		margin-left: auto;
+	}
+}
+
+.totalWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 24px;
+
+	.label {
+		font-size: 14px;
+		font-weight: 300;
+		margin-left: auto;
+		color: $p_blue-dark;
+	}
+
+	.total {
+		font-size: 18px;
+		font-weight: bold;
+		margin-left: 16px;
+		color: $s_orange;
+	}
+}
